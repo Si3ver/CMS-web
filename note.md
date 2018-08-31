@@ -30,8 +30,21 @@ yarn/yarn install 安装项目里所有依赖包
 
 ![组件生命周期图](./notes_static/reactlifeCycle.png)
 
-### 引入less支持
+### 引入less支持、antd
 
+```console
+// less
 yarn eject    // 暴露配置文件
 yarn add less-loader less
 修改配置文件，webpack.config.dev.js 和 webpack.config.prod.js，告诉webpack如何编辑、加载、解析less文件。（less-loader ->  postcss -> css-loader -> style-loader）
+// antd
+yarn add antd
+// 按需加载css
+yarn add babel-plugin-import
+```
+
+tips：
+
+- 通过babel-plugin-import插件，按需加载指定的css，可以减少样式数量，提高生产环境性能。
+- 配置less-loader,可以修改less变量，达到定制主题的效果。
+- less版本降级为 2.7.3， 修复未知bug。（less 3以上版本配置改动比较大）
