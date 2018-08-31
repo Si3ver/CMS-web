@@ -29,3 +29,9 @@ yarn/yarn install 安装项目里所有依赖包
 - componentWillUnmount
 
 ![组件生命周期图](./notes_static/reactlifeCycle.png)
+
+### 引入less支持
+
+yarn eject    // 暴露配置文件
+yarn add less-loader less
+修改配置文件，webpack.config.dev.js 和 webpack.config.prod.js，告诉webpack如何编辑、加载、解析less文件。（less-loader ->  postcss -> css-loader -> style-loader）
