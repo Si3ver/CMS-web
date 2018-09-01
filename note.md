@@ -48,3 +48,8 @@ tips：
 - 通过babel-plugin-import插件，按需加载指定的css，可以减少样式数量，提高生产环境性能。
 - 配置less-loader,可以修改less变量，达到定制主题的效果。
 - less版本降级为 2.7.3， 修复未知bug。（less 3以上版本配置改动比较大）
+
+### 页面结构开发
+
+组件 components/
+主页 admin.js
